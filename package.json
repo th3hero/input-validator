@@ -1,0 +1,27 @@
+{
+  "name": "input-validator",
+  "version": "1.0.0",
+  "description": "A validation module for frontend in react.js & next.js where we will be validating the user input as per the requirement weather they are required, string, integer, boolean etc. with state management for erros in useState purely built on typescript.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/th3hero/input-validator.git"
+  },
+  "keywords": [
+    "frontend",
+    "validator"
+  ],
+  "author": "Alok Kumar",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/th3hero/input-validator/issues"
+  },
+  "homepage": "https://github.com/th3hero/input-validator#readme",
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
+}
