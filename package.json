@@ -15,6 +15,9 @@
     "frontend",
     "validator"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Alok Kumar",
   "license": "GPL-2.0",
   "bugs": {
