@@ -1,5 +1,5 @@
 {
-  "name": "input-validator",
+  "name": "@th3hero/input-validator",
   "version": "1.0.1",
   "description": "A validation module for frontend in react.js & next.js where we will be validating the user input as per the requirement weather they are required, string, integer, boolean etc. with state management for errors in useState purely built on typescript.",
   "main": "index.js",
