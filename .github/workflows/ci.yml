@@ -1,0 +1,47 @@
+name: Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm test
+
+      - name: Run Build
+        run: npm run build
+
+      - name: Cleanup
+        if: always()
+        run: |
+          rm -rf node_modules
+          rm -rf dist
+          rm -rf coverage
+          rm -rf .nyc_output
+          rm -f package-lock.json
+          rm -f yarn.lock
+          rm -f pnpm-lock.yaml
+          rm -f .npmrc
+          rm -f .yarnrc
+          rm -f .pnpmrc
+          rm -f .env*
+          rm -f *.log
+          rm -f .DS_Store
+          rm -f Thumbs.db
